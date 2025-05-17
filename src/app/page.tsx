@@ -1,5 +1,4 @@
 import WhatWeDo from "./sections/what-we-do";
-import Sparkles from "@/components/custom/sparkles";
 import WhoIsThisFor from "./sections/who-is-this-for";
 import { FlipText } from "@/components/magicui/flip-text";
 import { LineShadowText } from "@/components/magicui/line-shadow-text";
@@ -22,7 +21,6 @@ export default function Home() {
             like-minded people
           </p>
         </div>
-        <Sparkles />
       </section>
       <WhatWeDo />
       <WhoIsThisFor />
