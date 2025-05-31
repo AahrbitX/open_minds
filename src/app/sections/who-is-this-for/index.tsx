@@ -1,12 +1,14 @@
 import React from "react";
+import HGroup from "@/components/common/hgroup";
+import Section from "@/components/common/section";
 
 function WhoIsThisFor() {
   return (
-    <section id="who-is-this-for">
-      <h2 className="text-5xl md:text-6xl font-semibold font-heading text-center">
+    <Section id="who-is-this-for">
+      <HGroup as="h2" subtitle="Discover the benefits tailored for you">
         Who is this for
-      </h2>
-    </section>
+      </HGroup>
+    </Section>
   );
 }
 

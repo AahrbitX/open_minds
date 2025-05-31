@@ -1,13 +1,12 @@
 import "./globals.css";
-import Link from "next/link";
 import type { Metadata } from "next";
 import AppProviders from "./providers";
-import Banner from "@/components/custom/banner";
-import { Nunito_Sans, DM_Sans } from "next/font/google";
+import { Geist, DM_Sans } from "next/font/google";
 import { AppNavbar } from "@/components/custom/nav-bar";
+import Footer from "@/components/custom/footer";
 
-const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
 });
 
@@ -28,18 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${nunitoSans.variable} ${dmSans.variable} antialiased`}>
-        <Banner>
-          <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
-            Open Minds are under development. Announcements are available on{" "}
-            <Link href="/announcements" className="underline">
-              Read announcement
-            </Link>
-          </p>
-        </Banner>
+      <body className={`${geist.variable} ${dmSans.variable} antialiased`}>
         <AppNavbar />
         <AppProviders>{children}</AppProviders>
-        <div className="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+        <div className="fixed inset-0 -z-10 h-screen w-screen bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+        <Footer />
       </body>
     </html>
   );
