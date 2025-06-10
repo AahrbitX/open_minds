@@ -9,7 +9,7 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <section id="heading" className=" overflow-x-hidden mb-14 md:mb-20">
+    <header id="heading" className=" overflow-x-hidden mb-14 md:mb-20">
       <div className="w-full h-full flex items-center justify-center flex-col gap-6">
         <h1 className="font-heading text-[72px] mt-12 md:mt-32  md:text-7xl lg:text-9xl font-bold text-center mx-auto w-3/4">
           <FlipText as={"span"} className="tracking-[-0.6rem]">
@@ -42,7 +42,7 @@ function HeroSection() {
           </Button>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 

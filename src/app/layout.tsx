@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geist.variable} ${dmSans.variable} antialiased`}>
+      <body className={`${geist.variable} ${dmSans.variable} antialiased `}>
         <AppNavbar />
         <AppProviders>{children}</AppProviders>
         <div className="fixed inset-0 -z-10 h-screen w-screen bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>

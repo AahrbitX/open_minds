@@ -28,7 +28,7 @@ function Footer() {
                     width={32}
                     height={32}
                   />
-                  Aahrbitx&deg;
+                  <i>Open</i>Minds
                 </Link>
               </div>
               <p className="text-gray-500 sm:pr-8">
@@ -80,10 +80,11 @@ function Footer() {
               <nav className="flex flex-col gap-4">
                 <div>
                   <Link
-                    href="#"
+                    href="https://aahrbitx.in"
+                    target="_blank"
                     className="text-gray-500 transition duration-100 hover:text-primary active:text-indigo-600"
                   >
-                    About
+                    AahrbitX&deg;
                   </Link>
                 </div>
 
@@ -92,15 +93,15 @@ function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-primary active:text-indigo-600"
                   >
-                    Investor Relations
+                    Blogs
                   </Link>
                 </div>
                 <div>
                   <Link
-                    href="#"
+                    href="/sitemap.xml"
                     className="text-gray-500 transition duration-100 hover:text-primary active:text-indigo-600"
                   >
-                    Blog
+                    Sitemap
                   </Link>
                 </div>
               </nav>
@@ -177,7 +178,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bg-gray-100">
+      <div className="bg-gray-100/60 backdrop-blur-sm">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex items-center justify-between gap-4 py-8">
             <span className="text-sm text-gray-400">

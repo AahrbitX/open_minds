@@ -41,7 +41,7 @@ function HGroup({
       {subtitle && (
         <p
           className={cn(
-            "mt-2 px-6 text-pretty text-lg md:text-xl text-gray-700 text-center",
+            "mt-2 px-6 text-pretty text-sm md:text-base lg:text-lg text-gray-700 text-center",
             subtitleClassName
           )}
         >
